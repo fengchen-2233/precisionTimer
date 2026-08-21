@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="高精度服务器时钟对齐倒计时"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="目标服务器/网站 URL:"/>
+    <EditText
+        android:id="@+id/et_target_url"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="如 https://ntp1.aliyun.com"
+        android:inputType="textUri"
+        android:layout_marginBottom="12dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="目标时刻 (HH:mm:ss):"/>
+    <EditText
+        android:id="@+id/et_target_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="例如 10:00:00"
+        android:inputType="time"
+        android:layout_marginBottom="20dp"/>
+
+    <Button
+        android:id="@+id/btn_start"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="开始校准与倒计时"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/tv_clock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00:00:00.000"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="#FF0000"
+        android:gravity="center"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:id="@+id/tv_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="等待开始..."
+        android:textColor="#666666"
+        android:textSize="13sp"/>
+
+</LinearLayout>
